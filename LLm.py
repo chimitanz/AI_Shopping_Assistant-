@@ -25,7 +25,7 @@ def getFromGemini(prompt, image_path=None):
         content = [image, prompt]
     else:
         content = [prompt]
-        model = "gemini-2.0-flash"
+        model = "gemini-1.5-flash"
 
     response = client.models.generate_content(
         model=model,

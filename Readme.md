@@ -6,28 +6,34 @@ This project is an AI-powered product assistant that helps users find relevant p
 
 ## Technologies Used
 
-| Component       | Technology                                |
-| --------------- | ----------------------------------------- |
-| Frontend        | Streamlit                                 |
-| Backend API     | FastAPI                                   |
-| Embedding Model | `sentence-transformers` (MiniLM)          |
-| Image Model     | `CLIP` (via Hugging Face Transformers)    |
-| Database        | SQLite3 (lightweight, file-based)         |
-| LLM             | Google Gemini (via `google.generativeai`) |
+| Component       | Technology                             |
+| --------------- |----------------------------------------|
+| Frontend        | Streamlit                              |
+| Backend API     | FastAPI                                |
+| Embedding Model | `sentence-transformers` (MiniLM)       |
+| Image Model     | `CLIP` (via Hugging Face Transformers) |
+| Database        | SQLite3 (lightweight, file-based)      |
+| LLM             | "gemini-1.5-flash"                     |
 
 ### Why This Stack?
 
-* **Streamlit** provides a fast building experience and clear UI for the user
-* **FastAPI** is lightweight and supports async multimodal endpoints
-* **CLIP + MiniLM** offer strong performance for visual and semantic similarity and easy to integrate
-* **SQLite** is easy to set up and perfect for mockup/product catalogs
-* **Gemini** is powerful for flexible, natural interaction and summarization
+* **Streamlit** was chosen for its simplicity and speed in building user-facing interfaces. It allows rapid development of a chat-like UI with image upload support.
+
+* **FastAPI** is a lightweight and developer-friendly web framework that makes it easy to define structured APIs. It was selected for its simplicity, fast development experience.
+
+* **MiniLM** was selected as the text embedding model for semantic search. It provides sentence embeddings at low computational cost.
+
+* **CLIP** was used as the visual encoder for image-based product search. CLIP maps both images into a shared embedding space, allowing image queries to be compared directly with product image.
+
+* **SQLite** was selected because the project does not require handling large-scale concurrent access or complex relational queries. It is lightweight, serverless, and easy to set up.
+
+* **Gemini 1.5 Flash** was selected for its fast response speed and low cost. Since the assistant mainly needs to extract intent and generate short replies.
 
 ---
 
-## 📦 Deliverables
+## Deliverables
 
-### 1. 📃 Code Repository
+### 1. Code Repository
 
 * Fully documented code with modular structure
 * Database generation scripts, product loading, embedding generation
@@ -71,7 +77,7 @@ Handles both text-based and image-based product search.
 
 ---
 
-## 🔄 How to Run
+## How to Run
 
 1. Clone the repository
 2. Install dependencies 
