@@ -13,9 +13,7 @@ This project is an AI-powered product assistant that helps users find relevant p
 | Embedding Model | `sentence-transformers` (MiniLM)       |
 | Image Model     | `CLIP` (via Hugging Face Transformers) |
 | Database        | SQLite3 (lightweight, file-based)      |
-| LLM             | "gemini-1.5-flash"                     |
-
-### Why This Stack?
+| LLM             | gemini-1.5-flash                       |
 
 * **Streamlit** was chosen for its simplicity and speed in building user-facing interfaces. It allows rapid development of a chat-like UI with image upload support.
 
