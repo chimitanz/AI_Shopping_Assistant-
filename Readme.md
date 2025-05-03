@@ -1,4 +1,4 @@
-# AI-Powered Commerce Assistant
+# AI-Powered Shopping Assistant
 
 This project is an AI-powered product assistant that helps users find relevant products through natural language queries and image-based search. The system combines a user-friendly frontend, a smart multimodal backend, and a semantic recommendation engine.
 
