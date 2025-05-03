@@ -88,7 +88,7 @@ uvicorn main:app --reload --port 8600
 4. Run frontend:
 
 ```bash
-streamlit run ui.py
+streamlit run app.py
 ```
 
 
